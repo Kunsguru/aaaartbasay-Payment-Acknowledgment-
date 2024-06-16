@@ -8,6 +8,7 @@ body {
             align-items: center;
         }
         nav {
+             margin-top: 70%;       
             width: 100%;
             background-color: #333;
             padding: 10px 0;
@@ -15,6 +16,7 @@ body {
             justify-content: space-around;
         }
         nav a {
+            top: 150%;        
             color: white;
             text-decoration: none;
             padding: 14px 20px;
@@ -23,6 +25,7 @@ body {
             background-color: #575757;
         }
         .form-container, .message-container, .login-container {
+             position: absolute;     
             background-color: white;
             padding: 20px;
             border-radius: 5px;
@@ -32,7 +35,7 @@ body {
             margin-top: 20px;
         }
         .login-container {
-            position: fixed;
+            position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
