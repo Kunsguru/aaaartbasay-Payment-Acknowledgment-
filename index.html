@@ -1,1 +1,52 @@
 
+
+
+
+<div class="overlay" id="overlay"></div>
+
+    <div class="login-container" id="loginContainer">
+        <h2>Admin Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="button">Login</button>
+        </form>
+    </div>
+
+    <div class="form-container hidden">
+        <h2>Payment Acknowledgment Form</h2>
+        <form id="acknowledgmentForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <button type="submit" class="button">Generate Message</button>
+        </form>
+    </div>
+
+    <div id="messageContainer" class="message-container hidden">
+        <h2>Payment Confirmation</h2>
+        <p>Dear <span id="displayName"></span>,</p>
+        <p>We are pleased to inform you that we have received your payment. Below are your payment details:</p>
+        <p>
+            <strong>Email:</strong> <span id="displayEmail"></span><br>
+            <strong>Phone Number:</strong> <span id="displayPhone"></span><br>
+            <strong>Address:</strong> <span id="displayAddress"></span><br>
+        </p>
+        <p>If you have any questions or need further assistance, please feel free to contact us.</p>
+        <p>Thank you for your prompt payment.</p>
+        <p>Best regards,<br>AAArtswithArtsBasy Team</p>
+        <button class="button" id="sendEmailButton">Send Email</button>
+    </div>
